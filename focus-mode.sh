@@ -13,11 +13,11 @@ ENTER_ARG=enter
 EXIT_ARG=exit 
 
 # Run as root.
-if [ "$UID" -ne "$ROOT_UID" ]
-then
-  echo "Must be root to run this script."
-  exit $E_NOTROOT
-fi 
+# if [ "$UID" -ne "$ROOT_UID" ]
+# then
+#   echo "Must be root to run this script."
+#   exit $E_NOTROOT
+# fi 
 
 if [ -n "$1" ]
 # Test whether command-line argument is present (non-empty).
